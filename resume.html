@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1 - Resume Form</title>
+</head>
+<body>
+  <p style="text-align: center; font-size: xx-large;">RESUME FORM</p>
+  <hr>
+  <form method="get">
+    <table align="center" cellpadding="8">
+      <tr>
+        <td><label for="name">Full Name</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email ID</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone No</label></td>
+        <td><input type="tel" id="phone" name="phone" required></td>
+      </tr>
+      <tr>
+        <td><label for="dob">DOB</label></td>
+        <td><input type="date" id="dob" name="birthdate"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Marital Status</td>
+        <td>
+          <input type="radio" id="married" name="marital" value="married">
+          <label for="married">Married</label>
+          <input type="radio" id="unmarried" name="marital" value="unmarried">
+          <label for="unmarried">Unmarried</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="nationality">Nationality</label></td>
+        <td>
+          <select name="nationality" id="nationality">
+            <option value="indian">INDIAN</option>
+            <option value="nepali">NEPALI</option>
+            <option value="japanese">JAPANESE</option>
+            <option value="chinese">CHINESE</option>
+            <option value="american">AMERICAN</option>
+            <option value="african">AFRICAN</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address">Address</label></td>
+        <td><textarea name="address" id="address" rows="3" cols="25"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="linkedin">LinkedIn URL</label></td>
+        <td><input type="url" id="linkedin" name="linkedin"></td>
+      </tr>
+      <tr>
+        <td><label for="github">GitHub URL</label></td>
+        <td><input type="url" id="github" name="github"></td>
+      </tr>
+      <tr>
+        <td><label for="profimg">Profile Image</label></td>
+        <td><input type="file" id="profimg" name="prof_img" accept="image/*"></td>
+      </tr>
+      <tr>
+        <td><label for="resume">Resume (PDF)</label></td>
+        <td><input type="file" id="resume" name="resume" accept="application/pdf"></td>
+      </tr>
+      <tr>
+        <td><label for="career">Career Objective</label></td>
+        <td><textarea name="career_obj" id="career" cols="23" rows="5" placeholder="Write career objective"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="qualification">Highest Qualification</label></td>
+        <td>
+          <select name="qualification" id="qualification">
+            <option value="10th">10th Pass</option>
+            <option value="12th">12th Pass</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="graduate">Graduate</option>
+            <option value="postgraduate">Post Graduate</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="college">College/University Name</label></td>
+        <td><input type="text" id="college" name="college"></td>
+      </tr>
+      <tr>
+        <td><label for="gradyear">Year of Graduation</label></td>
+        <td><input type="text" id="gradyear" name="grad_year"></td>
+      </tr>
+      <tr>
+        <td><label for="skills">Technical Skills</label></td>
+        <td><input type="text" id="skills" name="tech_skills"></td>
+      </tr>
+      <tr>
+        <td><label for="certifications">Certifications</label></td>
+        <td><input type="file" id="certifications" name="certifications"></td>
+      </tr>
+      <tr>
+        <td><label for="experience">Work Experience</label></td>
+        <td><input type="text" id="experience" name="work_exp"></td>
+      </tr>
+      <tr>
+        <td><label for="jobrole">Job Role</label></td>
+        <td><input type="text" id="jobrole" name="job_role"></td>
+      </tr>
+      <tr>
+        <td><label for="hobbies">Hobbies</label></td>
+        <td><input type="text" id="hobbies" name="hobbies"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="declaration" name="authenticity" required>
+          <label for="declaration">
+            I hereby declare that the information provided above is true and accurate to the best of my knowledge.
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </table>
+    <hr>
+  </form>
+</body>
+</html>
